@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Harian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jadwal Harian</h1>
+    <div id="schedule">
+        <h2>1 Juli 2025 - Selasa</h2>
+        <ul>
+            <li><input type="checkbox" id="activity1"><label for="activity1">Apa itu FB Ads? Tujuan, mindset, jenis campaign</label></li>
+            <li><input type="checkbox" id="activity2"><label for="activity2">Buat akun Business Manager (BM), FB Page, setup dasar</label></li>
+            <li><input type="checkbox" id="activity3"><label for="activity3">Struktur iklan: campaign > ad set > ad</label></li>
+            <li><input type="checkbox" id="activity4"><label for="activity4">Targeting: audience, interest, umur, lokasi</label></li>
+            <li><input type="checkbox" id="activity5"><label for="activity5">Copywriting dasar: headline, CTA, penawaran</label></li>
+        </ul>
+    </div>
+    <button onclick="resetCheckboxes()">Reset</button>
+    <script>
+        function resetCheckboxes() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        }
+    </script>
+</body>
+</html>

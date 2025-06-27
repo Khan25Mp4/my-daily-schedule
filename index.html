@@ -9,52 +9,154 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-
         h1, h2 {
             color: #333;
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 10px 0;
-        }
-
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        button {
+        table {
+            width: 100%;
+            border-collapse: collapse;
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <h1>Jadwal Harian</h1>
-    <div id="schedule">
-        <h2>1 Juli 2025 - Selasa</h2>
-        <ul>
-            <li><input type="checkbox" id="activity1"><label for="activity1">Apa itu FB Ads? Tujuan, mindset, jenis campaign</label></li>
-            <li><input type="checkbox" id="activity2"><label for="activity2">Buat akun Business Manager (BM), FB Page, setup dasar</label></li>
-            <li><input type="checkbox" id="activity3"><label for="activity3">Struktur iklan: campaign > ad set > ad</label></li>
-            <li><input type="checkbox" id="activity4"><label for="activity4">Targeting: audience, interest, umur, lokasi</label></li>
-            <li><input type="checkbox" id="activity5"><label for="activity5">Copywriting dasar: headline, CTA, penawaran</label></li>
-        </ul>
-    </div>
-    <button onclick="resetCheckboxes()">Reset</button>
-    <script>
-        function resetCheckboxes() {
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            checkboxes.forEach(checkbox => {
-                checkbox.checked = false;
-            });
-        }
-    </script>
+    <h1>MINGGU 1 – FB Ads Dasar</h1>
+    <p>🗓️ Selasa, 1 Juli – Senin, 7 Juli 2025</p>
+    <p>🎯 Goal Mingguan:<br>
+    Kuasai dasar FB Ads dari nol: mindset, bikin akun, pahami struktur campaign, audience, copywriting, dan praktek simulasi.</p>
+    <h2>📆 Breakdown Harian</h2>
+    <table>
+        <tr>
+            <th>Tanggal</th>
+            <th>Hari</th>
+            <th>Fokus Belajar</th>
+        </tr>
+        <tr>
+            <td>1 Juli</td>
+            <td>Selasa</td>
+            <td>Apa itu FB Ads? Tujuan, mindset, jenis campaign</td>
+        </tr>
+        <tr>
+            <td>2 Juli</td>
+            <td>Rabu</td>
+            <td>Buat akun Business Manager (BM), FB Page, setup dasar</td>
+        </tr>
+        <tr>
+            <td>3 Juli</td>
+            <td>Kamis</td>
+            <td>Struktur iklan: campaign > ad set > ad</td>
+        </tr>
+        <tr>
+            <td>4 Juli</td>
+            <td>Jumat</td>
+            <td>Targeting: audience, interest, umur, lokasi</td>
+        </tr>
+        <tr>
+            <td>5 Juli</td>
+            <td>Sabtu</td>
+            <td>Copywriting dasar: headline, CTA, penawaran</td>
+        </tr>
+        <tr>
+            <td>6 Juli</td>
+            <td>Minggu</td>
+            <td>Analisis iklan orang lain + studi Ads Library</td>
+        </tr>
+        <tr>
+            <td>7 Juli</td>
+            <td>Senin</td>
+            <td>Rangkuman belajar + simulasi bikin iklan pertama (belum dijalankan iklannya)</td>
+        </tr>
+    </table>
+    <h2>🕒 Jadwal Harian (Digunakan Setiap Hari dari 1–7 Juli)</h2>
+    <table>
+        <tr>
+            <th>Waktu</th>
+            <th>Aktivitas</th>
+        </tr>
+        <tr>
+            <td>00.30–02.30</td>
+            <td>Freelance (Pomodoro 25/5)</td>
+        </tr>
+        <tr>
+            <td>02.30–03.00</td>
+            <td>Istirahat / refleksi / salat</td>
+        </tr>
+        <tr>
+            <td>03.00–04.30</td>
+            <td>Freelance opsional / winding down</td>
+        </tr>
+        <tr>
+            <td>04.30–04.45</td>
+            <td>Salat Subuh</td>
+        </tr>
+        <tr>
+            <td>04.45–10.30</td>
+            <td>Tidur utama</td>
+        </tr>
+        <tr>
+            <td>10.30–11.00</td>
+            <td>Bangun, mandi, sarapan</td>
+        </tr>
+        <tr>
+            <td>11.00–12.30</td>
+            <td>Belajar materi FB Ads (sesuai topik harian)</td>
+        </tr>
+        <tr>
+            <td>12.30–13.15</td>
+            <td>Istirahat + Salat Dzuhur</td>
+        </tr>
+        <tr>
+            <td>13.15–15.00</td>
+            <td>Freelance</td>
+        </tr>
+        <tr>
+            <td>15.00–15.30</td>
+            <td>Snack / stretching</td>
+        </tr>
+        <tr>
+            <td>15.30–16.45</td>
+            <td>Praktek ringan / catat insight FB Ads</td>
+        </tr>
+        <tr>
+            <td>16.45–17.15</td>
+            <td>Persiapan + Salat Ashar</td>
+        </tr>
+        <tr>
+            <td>17.15–18.00</td>
+            <td>Scroll santai (boleh lihat iklan orang buat studi)</td>
+        </tr>
+        <tr>
+            <td>18.00–19.00</td>
+            <td>Mandi + Makan malam</td>
+        </tr>
+        <tr>
+            <td>19.00–19.45</td>
+            <td>Salat Maghrib + persiapan review</td>
+        </tr>
+        <tr>
+            <td>19.45–20.30</td>
+            <td>Review progres (tulis 3 hal dipahami & 1 pertanyaan dari materi hari ini)</td>
+        </tr>
+        <tr>
+            <td>20.30–21.30</td>
+            <td>Belajar tambahan / freelance ringan / riset Ads Library</td>
+        </tr>
+        <tr>
+            <td>21.30–22.00</td>
+            <td>Salat Isya</td>
+        </tr>
+        <tr>
+            <td>22.00–00.00</td>
+            <td>Waktu bebas (baca buku, tidur awal, atau istirahat total)</td>
+        </tr>
+    </table>
 </body>
 </html>
